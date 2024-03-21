@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complete responsive website using  bootstrap</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--- link  for bootstrap-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+     <!--- link  for  font style -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+  <!--- link  for awesome fonts-->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+</head>
+
+<body>
+
+      <!--- navbar-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom px-3 fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand  fs-2" href="#">Random <span class="text-primary">~ Clicks</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+              <li class="nav-item  fs-4">
+                <a class="nav-link active  text-primary" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item fs-4">
+                <a class="nav-link" href="#abouts">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fs-4" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu text-center">
+                  <li><a class="dropdown-item" href="#service">Pre Wedding shoots</a></li>
+                  <li><a class="dropdown-item" href="#service">Wedding shoot</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#service">Birthday party</a></li>
+                </ul>
+              </li>
+              <li class="nav-item fs-4">
+                <a class="nav-link active" aria-current="page" href="#team">Our Team</a>
+              </li>
+              <li class="nav-item fs-4">
+                <a class="nav-link active" aria-current="page" href="#contact">Contact Us</a>
+              </li>
+            <button class="btn btn-outline-success btn-lg px-2 mb-2" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+        <!--- slider for pics-->
+
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active px-5">
+            <img src="pic_1.png"  height="750px;" class="d-block w-100" alt="...">
+            <div class="carousel-caption  d-md-block">
+              <h5>First slide label</h5>
+              <p>Nature creates a combination of some movements randomly</p>
+            </div>
+          </div>
+          <div class="carousel-item px-5">
+            <img src="pic_2.png" height="750px;" class="d-block w-100" alt="...">
+            <div class="carousel-caption  d-md-block">
+              <h5>Second slide label</h5>
+              <p>Expressing a small smile while capturing that movement.</p>
+            </div>
+          </div>
+          <div class="carousel-item px-5">
+            <img src="pic_3.png" height="750px;"  class="d-block w-100" alt="...">
+            <div class="carousel-caption d-md-block">
+              <h5>Third slide label</h5>
+              <p>The capturing of the front face random clicks.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+       <!--- About me section-->
+
+       <section class="about" id="abouts">
+        <div class="container-fluid text-center py-5 ">
+            <div class="text-center">
+            <h2>About <span class="text-primary">Me</span></h2>
+            <hr / class="w-25 m-auto">
+        </div>
+        <div class="row mt-5 ">
+            <div class="col-sm-12 col-lg-6 col-md-6 col-12 ">
+            <h2><span class="text-primary">What do you want to know ?</span></h2> 
+            <p class="p-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br> Qui vel eaque accusamus, perferendis ut ipsam? <br>ipsum dolor sit amet consectetur adipisicing elit</p>
+            <button type="button" class="btn btn-light">More About Me..</button>
+
+       <!--- Accordian-->
+
+            <div class="accordion accordion-flush m-3" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                   <h2>My Dreams</h2> 
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                     <h2> Specializations</h2> 
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      <h2>   Best Awards</h2> 
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-sm-12 col-lg-6 col-md-6 col-12 mt-5">
+            <img src="rahul.png.jpg " width="320px;" height="330px;" >
+            </div>
+            
+        </div>
+       </section>
+    
+
+         <!--our services-->
+
+         <section class="services py-5 bg-light" id="service">
+            <div class="container" >
+                <div class="text-center my-5">
+                    <h2> My <span class="text-primary">Services</span></h2>
+                    <hr / class="w-25 m-auto">
+                </div>
+                 <div class="row">
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                        <div class="card bg-success">
+                        <div class="card-body ">
+                            <i class="bi bi-camera-fill  fs-3 "></i>
+                          <h5 class="card-title">Pre-Wedding Shoots</h5>
+                          <p class="card-text">Special discount for local places 20%,<br>
+                        Out of station shoot extra charges </p>
+                          <a href="#" class="btn btn-primary">Book Now..</a>
+                        </div>
+                      </div>
+                    </div>
+                
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                        <div class="card bg-success">
+                        <div class="card-body">
+                            <i class="bi bi-cake2-fill fs-3 "></i>
+                          <h5 class="card-title">Birthday Party</h5>
+                          <p class="card-text">As per the requirement , no need of Extra charges,photos and videos both</p>
+                          <a href="#" class="btn btn-primary">Book Now..</a>
+                        </div>
+                      </div>
+                    </div>
+                
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                        <div class="card bg-success">
+                        <div class="card-body">
+                            <i class="bi bi-arrow-through-heart-fill fs-3"></i>
+                          <h5 class="card-title">Wedding Shoot</h5>
+                          <p class="card-text">Both sides package 25% discount for the january months</p>
+                          <a href="#" class="btn btn-primary">Book Now..</a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <!--second row-->
+
+                <div class="row mt-5">
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                        <div class="card bg-success">
+                        <div class="card-body">
+                            <i class="bi bi-person-hearts fs-3"></i>
+                          <h5 class="card-title">Engagement Shoots</h5>
+                          <p class="card-text">Full package Album + Videos ,You may got discount up to 10%</p>
+                          <a href="#" class="btn btn-primary">Book Now..</a>
+                        </div>
+                      </div>
+                    </div>
+                
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                        <div class="card bg-success">
+                        <div class="card-body">
+                            <i class="bi bi-balloon-heart-fill fs-3"></i>
+                          <h5 class="card-title">Full Wedding Package</h5>
+                          <p class="card-text">With all the functions ,haldi,pre-wedding,wedding,engagement etc.</p>
+                          <a href="#" class="btn btn-primary">Book Now..</a>
+                        </div>
+                      </div>
+                    </div>
+                
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                        <div class="card bg-success">
+                        <div class="card-body">
+                            <i class="bi bi-journal-plus fs-3"></i>
+                          <h5 class="card-title">Pre -Booking</h5>
+                          <p class="card-text">This gives the special offers to our diwali customers <br> booking before 15 days of Diwali </p>
+                          <a href="#" class="btn btn-primary">Book Now..</a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                  </div>
+         </section>
+         
+         <!-- our teams-->
+          <section class="team my-5 text-center" id="team">
+            <div class="container">
+                <div class="text-center my-5">
+                    <h2> Our<span class="text-primary">Teams</span></h2>
+                    <hr / class="w-25 m-auto">
+                </div>
+
+                    <div class="row mt-5">
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                            <div class="card-body "> </div>
+                              <img src="rahul.png.jpg" width="300px;" height="300px;"class="img-fluid rounded-circle border border-primary p-2" >
+                              <h2>Rahul kumar</h2>
+                              <p>Team Manager,Editor</p>
+                            </div>
+
+
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                            <div class="card-body rounded"></div>
+                            <img src="abbhi.png.jpg" width="200px;" height="150px;"class="img-fluid rounded-circle border border-primary p-2">
+                            <h2>Abhishek Singh Jadon</h2>
+                            <p>Cameraman,Team Leader,Head</p>
+                            </div>
+
+                          <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                            <div class="card-body "></div>
+                            <img src="yash.png.jpg"width="200px;" height="160px;" class="img-fluid rounded-circle border border-primary p-2">
+                            <h2>Yash Pratap Singh</h2>
+                            <p>Cameraman,Producer</p>
+                            </div>
+                         </div>
+                        </div>
+          </section>
+
+          <!--contact us-->
+          <section class="contact" id="contact">
+            <div class="container p-2">
+                <div class="text-center my-5">
+                    <h2>Feel Free To<span class="text-primary"> Contact Us</span></h2>
+                    <hr / class="w-25 m-auto">
+                </div>
+
+                   <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-12">
+                        <form class="row g-3">
+                            <div class="col-md-6">
+                              <label for="inputEmail4" class="form-label">Email</label>
+                              <input type="email" class="form-control" id="inputEmail4">
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputPassword4" class="form-label">Password</label>
+                              <input type="password" class="form-control" id="inputPassword4">
+                            </div>
+                            <div class="col-12">
+                              <label for="inputAddress" class="form-label">Address</label>
+                              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                            </div>
+                            <div class="col-12">
+                              <label for="inputAddress2" class="form-label">Address 2</label>
+                              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputCity" class="form-label">City</label>
+                              <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="col-md-4">
+                              <label for="inputState" class="form-label">State</label>
+                              <select id="inputState" class="form-select">
+                                <option selected>Choose...</option>
+                                <option>...</option>
+                              </select>
+                            </div>
+                            <div class="col-md-2">
+                              <label for="inputZip" class="form-label">Zip</label>
+                              <input type="text" class="form-control" id="inputZip">
+                            </div>
+                            <div class="col-12">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                  Check me out
+                                </label>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <button type="submit" class="btn btn-primary">Sign in</button>
+                            </div>
+                          </form>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-12 mt-3 text-center rounded-circle ">
+
+                        <img src="yash.png.jpg" width="320px;" height="330px">
+                    </div>
+                   </div>
+            </div>
+          </section>
+          
+
+        
+
+
+
+     
+
+   
+ 
+    
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
